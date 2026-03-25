@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<!--    <style name="Theme.Arunachaleswara" parent="android:Theme.Material.Light.NoActionBar" />-->
-    <style name="Theme.Arunachaleswara" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:windowSplashScreenBackground">@android:color/white</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@null</item>
-    </style>
+    <style name="Theme.Arunachaleswara" parent="android:Theme.Material.Light.NoActionBar" />
+
+        <!--<style name="Theme.YourApp" parent="Theme.Material3.DayNight.NoActionBar">
+            <item name="android:windowSplashScreenBackground">@android:color/white</item>
+        </style>-->
+
 </resources>
