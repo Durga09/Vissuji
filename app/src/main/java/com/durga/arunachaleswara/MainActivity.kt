@@ -25,6 +25,7 @@ class MainActivity : ComponentActivity() {
         requestNotificationPermission()
 
         setContent {
+
             ArunachaleswaraTheme {
                 val userViewModel: UserViewModel = viewModel()
                 AppNavigation(userViewModel)
