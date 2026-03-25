@@ -101,4 +101,32 @@ class UserViewModel(
         super.onCleared()
         listenerRegistration?.remove()
     }
+    fun updateUser(user: User) {
+        if (
+            user.name.isBlank() ||
+            user.email.isBlank() ||
+            user.phone.isBlank() ||
+            user.address.isBlank()
+        ) {
+            message = "Please fill all fields"
+            return
+        }
+
+        isLoading = true
+        message = ""
+        errorMessage = ""
+
+        repository.updateUser(
+            user = user,
+            onSuccess = { successMessage ->
+                message = successMessage
+                selectedUser = user
+                isLoading = false
+            },
+            onFailure = { error ->
+                errorMessage = error
+                isLoading = false
+            }
+        )
+    }
 }

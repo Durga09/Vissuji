@@ -122,7 +122,6 @@ fun UserFormScreen(
                         phone = ""
                         address = ""
                     }
-                    ReminderReceiver().
                 },
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(
