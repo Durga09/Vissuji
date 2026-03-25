@@ -114,7 +114,7 @@ fun UserFormScreen(
                         email = email,
                         phone = phone,
                         address = address,
-                        date = ""+serverTime
+                        date = serverTime.toString()
 
                     ) {
                         name = ""
