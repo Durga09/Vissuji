@@ -16,6 +16,7 @@ class CalculatorTest {
     fun testSubtraction() {
         val result = calculator.calculateValues(5, 4) { a, b -> a - b }
         assertEquals(1, result)
+
     }
 
     @Test
