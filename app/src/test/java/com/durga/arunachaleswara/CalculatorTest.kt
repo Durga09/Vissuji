@@ -11,7 +11,6 @@ class CalculatorTest {
         val result = calculator.calculateValues(5, 4) { a, b -> a + b }
         assertEquals(9, result)
     }
-
     @Test
     fun testSubtraction() {
         val result = calculator.calculateValues(5, 4) { a, b -> a - b }
