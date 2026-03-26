@@ -16,11 +16,20 @@ import com.durga.arunachaleswara.ui.navigation.AppNavigation
 import com.durga.arunachaleswara.ui.theme.ArunachaleswaraTheme
 import com.durga.arunachaleswara.viewmodel.UserViewModel
 
+
+val add ={a:Int,b:Int->a+b}
+
+fun calculateValues(a:Int,b:Int,lamda:(Int,Int)->Int):Int{
+
+    return lamda(a,b)
+}
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+       val result= calculateValues(5,4,add)
+        println("result:: $result")
         createNotificationChannel()
         requestNotificationPermission()
 
